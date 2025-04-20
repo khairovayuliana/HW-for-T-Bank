@@ -2,8 +2,10 @@ package ru.currency_tracking;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
+@EnableScheduling
 public class CurrencyTrackingApplication {
     public static void main(String[] args) {
         SpringApplication.run(CurrencyTrackingApplication.class, args);

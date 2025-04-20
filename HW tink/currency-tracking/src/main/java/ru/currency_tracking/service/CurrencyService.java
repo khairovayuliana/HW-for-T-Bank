@@ -1,6 +1,7 @@
 package ru.currency_tracking.service;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 import ru.currency_tracking.model.Currency;
@@ -11,6 +12,7 @@ import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class CurrencyService {
     private final CurrencyRepository currencyRepository;
 
