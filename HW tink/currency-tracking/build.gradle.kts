@@ -8,6 +8,7 @@ plugins {
 group = "ru.currency_tracking"
 version = "0.0.1-SNAPSHOT"
 
+
 java {
     toolchain {
         languageVersion.set(JavaLanguageVersion.of(21))
@@ -62,5 +63,10 @@ liquibase {
                 "password" to "postgres"
             )
         }
+    }
+}
+tasks {
+    processResources {
+        exclude("**/src/**") // Исключаем все папки src из ресурсов
     }
 }
